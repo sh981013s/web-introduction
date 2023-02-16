@@ -1,0 +1,27 @@
+{
+  "name": "web-introduction",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "open-cli html/index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sh981013s/web-introduction.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sh981013s/web-introduction/issues"
+  },
+  "homepage": "https://github.com/sh981013s/web-introduction#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "gsap": "^3.11.4"
+  },
+  "devDependencies": {
+    "open-cli": "^7.1.0"
+  }
+}
