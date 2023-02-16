@@ -3,23 +3,42 @@
 * {
     box-sizing: border-box;
     padding: 0;
-    margin: 0;
+    margin: 0 ;
+
 }
 
 body {
-    background: #457fb4;
-    font-family: "Roboto", sans-serif;
-    display: flex;
-    height: 100vh;
+    background-image: url("https://images.unsplash.com/photo-1617111289607-c41635f46f47?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1276&q=80");
+    background-repeat: no-repeat;
+    background-size: 150%;
+    /*display: flex;*/
+    width: 100%;
+    height: auto;
+    color: white;
+
 }
+
+a { color: inherit; }
+
+.introduce {
+    margin: 50px 0 20px 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 .hero-container {
     margin: auto;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .main-container {
-    width: 270px;
+    width: 350px;
     height: 540px;
     position: relative;
     margin: 0 20px;
@@ -118,6 +137,7 @@ body {
 .ticket__movie-title {
     text-transform: uppercase;
     margin-bottom: 5px;
+    color: black
 }
 
 .ticket__movie-slogan {
@@ -151,3 +171,36 @@ body {
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
 }
+
+.form__label {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    margin-left: 2rem;
+    margin-top: 0.7rem;
+    display: block;
+    transition: all 0.3s;
+    transform: translateY(0rem);
+}
+
+.form__input {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    font-size: 1.2rem;
+    margin: 0 auto;
+    padding: 1.5rem 2rem;
+    border-radius: 0.2rem;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    width: 90%;
+    display: block;
+    border-bottom: 0.3rem solid transparent;
+    transition: all 0.3s;
+}
+
+.form__input:placeholder-shown + .form__label {
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transform: translateY(-4rem);
+    transform: translateY(-4rem);
+}
+
